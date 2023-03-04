@@ -21,9 +21,10 @@ const App = () => {
           </div>
           <div className="scheme-colors">
             {palettes[0].colors.map((color) => (
-              <SchemeColor key={color} colors={color.colors} />
+              <SchemeColor key={color.colors} colors={color.colors} />
             ))}
           </div>
+
           <div className="palette-info">
             <h2>Mimose Retreat</h2>
             <p>
