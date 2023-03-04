@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
 import { palettes } from './palettes.js';
+import { SchemeColor } from '../components/SchemeColor';
 
 const App = () => {
   return (
@@ -18,14 +19,9 @@ const App = () => {
               alt="Mimosa Retreat"
             />
             <div className="scheme-colors">
-              {palettes.map((color) => {
-                return (
-                  <li className="color">
-                    <div className="scheme_color">{color.colors} </div>;
-                  </li>
-                );
-              })}
-              ;
+              {palettes.map((color) => (
+                <SchemeColor colors={color.colors} />
+              ))}
             </div>
           </div>
           <div className="palette-info">
