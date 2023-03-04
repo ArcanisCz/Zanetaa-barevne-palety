@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import Palettes from './palettes';
+import palettes from './palettes.js';
 
 const App = () => {
   return (
