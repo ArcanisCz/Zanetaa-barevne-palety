@@ -56,36 +56,13 @@ const App = () => {
               alt="Ocean Waves"
             />
             <div className="scheme-colors">
-              <div
-                className="scheme-color"
-                style={{ backgroundColor: '#012e4a' }}
-              >
-                #012e4a
-              </div>
-              <div
-                className="scheme-color"
-                style={{ backgroundColor: '#036280' }}
-              >
-                #036280
-              </div>
-              <div
-                className="scheme-color"
-                style={{ backgroundColor: '#378ba4' }}
-              >
-                #378ba4
-              </div>
-              <div
-                className="scheme-color"
-                style={{ backgroundColor: '#81bece' }}
-              >
-                #81bece
-              </div>
-              <div
-                className="scheme-color"
-                style={{ backgroundColor: '#e8ede7' }}
-              >
-                #e8ede7
-              </div>
+              {palettes.map((color) => {
+                return (
+                  <li className="color">
+                    <div className="scheme_color">{color.colors} </div>;
+                  </li>
+                );
+              })}
             </div>
           </div>
           <div className="palette-info">
