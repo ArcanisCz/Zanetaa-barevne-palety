@@ -19,9 +19,14 @@ const App = () => {
               alt="Mimosa Retreat"
             />
             <div className="scheme-colors">
-              {palettes.map((color) => (
-                <SchemeColor colors={color.colors} />
-              ))}
+              {palettes.map((color) => {
+                return (
+                  <li className="color">
+                    <div className="scheme_color">{color.colors} </div>;
+                  </li>
+                );
+              })}
+              ;
             </div>
           </div>
           <div className="palette-info">
