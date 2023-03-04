@@ -18,16 +18,11 @@ const App = () => {
               src="/img/mimosa-retreat.jpg"
               alt="Mimosa Retreat"
             />
-            <div className="scheme-colors">
-              {palettes.map((color) => {
-                return (
-                  <li className="color">
-                    <div className="scheme_color">{color.colors} </div>;
-                  </li>
-                );
-              })}
-              ;
-            </div>
+          </div>
+          <div className="scheme-colors">
+            {palettes[0].colors.map((color) => (
+              <SchemeColor key={color} colors={color.colors} />
+            ))}
           </div>
           <div className="palette-info">
             <h2>Mimose Retreat</h2>
@@ -57,13 +52,9 @@ const App = () => {
               alt="Ocean Waves"
             />
             <div className="scheme-colors">
-              {palettes.map((color) => {
-                return (
-                  <li className="color">
-                    <div className="scheme_color">{color.colors} </div>;
-                  </li>
-                );
-              })}
+              {palettes[1].colors.map((color) => (
+                <SchemeColor key={color} colors={color.colors} />
+              ))}
             </div>
           </div>
           <div className="palette-info">
