@@ -34,12 +34,6 @@
   height: 600px;
 }
 
-.scheme-colors {
-  flex: 1;
-  display: flex;
-  gap: 10px;
-}
-
 .palette-scheme--horizontal > .scheme-colors {
   flex-direction: row;
 }
