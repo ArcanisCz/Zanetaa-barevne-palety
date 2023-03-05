@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.css';
+import { palettes } from '../../src/palettes';
+import { SchemeColor } from '../SchemeColor';
 
 export const PaletteData = ({ name, image, attribution, description }) => {
   return (

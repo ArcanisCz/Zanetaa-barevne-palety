@@ -22,11 +22,9 @@ const App = () => {
           />
         ))}
 
-        <div className="scheme-colors">
-          {palettes.map((color) => (
-            <SchemeColor key={color.colors} colors={color.colors} />
-          ))}
-        </div>
+        {palettes.map((color) => (
+          <SchemeColor key={color.colors} colors={color.colors} />
+        ))}
       </main>
       <footer>
         <p>Czechitas, Digitální akademie: Web</p>
