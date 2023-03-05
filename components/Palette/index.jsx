@@ -9,10 +9,10 @@ export const PaletteData = ({ name, image, attribution, description }) => {
       <div className="palette-scheme palette-scheme--vertical">
         <img className="scheme-image" src={image} alt={name} />
       </div>
+
       <div className="palette-info">
         <h2>{name}</h2>
         <p>{description}</p>
-
         <p>
           Photo by{' '}
           <a href={attribution.url} target="_blank">
@@ -20,6 +20,10 @@ export const PaletteData = ({ name, image, attribution, description }) => {
           </a>
           .
         </p>
+        {palettes.map((color) => (
+          <SchemeColor key={color.colors} colors={color.colors} />
+        ))}
+        ;
       </div>
     </div>
   );

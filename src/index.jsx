@@ -21,10 +21,6 @@ const App = () => {
             attribution={data.attribution}
           />
         ))}
-
-        {palettes.map((color) => (
-          <SchemeColor key={color.colors} colors={color.colors} />
-        ))}
       </main>
       <footer>
         <p>Czechitas, Digitální akademie: Web</p>
