@@ -94,7 +94,6 @@ const App = () => {
               special versatility. In summer it will invigorate, make you act
               and move, and in winter it will warm and relax.
             </p>
-
             <p>
               Photo by{' '}
               <a href="https://unsplash.com/photos/XkiONXX7i4o" target="_blank">
@@ -104,7 +103,6 @@ const App = () => {
             </p>
           </div>
         </div>
-
         <div className="palette">
           <div className="palette-scheme palette-scheme--horizontal">
             <img
@@ -154,7 +152,6 @@ const App = () => {
               bright light green shade, growing into banana yellow. From the
               yellow tones, a sudden rich pink breaks through.
             </p>
-
             <p>
               Photo by{' '}
               <a href="https://unsplash.com/photos/wc9avd2RaN0" target="_blank">
@@ -171,5 +168,4 @@ const App = () => {
     </div>
   );
 };
-
 createRoot(document.querySelector('#app')).render(<App />); */
