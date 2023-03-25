@@ -27,7 +27,7 @@ export const PaletteData = ({
           .
         </p>
         {colors.map((color) => (
-          <SchemeColor key={color.colors} colors={color.colors} />
+          <SchemeColor key={color} color={color} />
         ))}
       </div>
     </div>
