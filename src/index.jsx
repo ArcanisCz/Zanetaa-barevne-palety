@@ -2,8 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
 import { palettes } from './palettes.js';
-import { SchemeColor } from '../components/SchemeColor';
-import { PaletteData } from '../components/Palette';
+import { SchemeColor } from './components/SchemeColor';
+import { PaletteData } from './components/Palette';
 
 const App = () => {
   return (
