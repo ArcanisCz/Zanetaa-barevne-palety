@@ -19,6 +19,7 @@ const App = () => {
             description={data.description}
             image={data.image}
             attribution={data.attribution}
+            color={data.colors}
           />
         ))}
       </main>
